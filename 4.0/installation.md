@@ -250,6 +250,9 @@ Nova uses the default password reset broker defined in your `auth` configuration
 'passwords' => env('NOVA_PASSWORDS', null),
 ```
 
+#### Prefilling Email field on Password Reset Page
+Nova will automatically prefill the email input field on Password Reset Page if password reset link contains email parameter. However, you will have to customize the password reset link. You should refer to your laravel version documentation for [password reset](https://laravel.com/docs/9.x/passwords#reset-link-customization).
+
 ### Customizing Nova's Storage Disk Driver
 
 Nova uses the default storage disk driver defined in your `filesystems` configuration file. If you would like to customize this disk, you may set the `storage_disk` value within Nova's configuration file:
